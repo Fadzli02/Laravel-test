@@ -21,6 +21,9 @@ Route::get('/', function () {
 });
 
 
+Route::get('/upload',function(){
+    return view('home.uplod');
+});
 // Route::get('/login',[Authent::class,'login']);
 
 Route::middleware('guest')->group(function () {
